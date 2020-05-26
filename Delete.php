@@ -25,7 +25,7 @@ if (isset($_GET['action']))
 
     if ($_GET['action'] == 'clear')
     {
-        setcookie('shoping_cart', '', time() - 3600);
+        setcookie('shopping_cart', '', time() - 3600);
 
         header("location:index.php?clearall=1");
     }
