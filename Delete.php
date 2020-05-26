@@ -30,24 +30,3 @@ if (isset($_GET['action']))
         header("location:index.php?clearall=1");
     }
 }
-
-
-if (isset($_GET['remove']))
-{
-    $massage = '
-        <div class="alert alert-success alert-dismissible">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            Item Removed
-        </div>
-    ';
-}
-
-if (isset($_GET['clearall']))
-{
-    $massage = '
-        <div class="alert alert-success alert-dismissible">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            Shopping cart is clear
-        </div>
-    ';
-}
